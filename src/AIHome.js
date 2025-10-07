@@ -54,7 +54,7 @@ export default function AIHome() {
   }, []);
 
   const icons = [
-    { Icon: Brain, label: 'Neural Networks' },
+    { Icon: Brain, label: 'AI Applications' },
     { Icon: Cpu, label: 'AI Systems' },
     { Icon: Database, label: 'Big Data' },
     { Icon: Bot, label: 'Automation' },
