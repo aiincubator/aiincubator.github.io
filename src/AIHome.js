@@ -105,19 +105,26 @@ export default function AIHome() {
         ))}
       </motion.div>
 
-      <motion.div
+    <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1.2, duration: 1 }}
-        className="mt-12"
-      >
-        <img
-          src="/images/walkingrobot.gif"
-          alt="Walking Robot Animation"
-          className="rounded-2xl shadow-2xl scale-60"
-          style={{ transform: 'scale(0.6)' }}
-        />
-      </motion.div>
+        className="mt-12 flex items-center justify-center"
+        >
+        <div 
+            className="relative w-56 md:w-72 aspect-square rounded-full overflow-hidden"
+            style={{ transform: 'scale(0.8)' }} // 80%
+        >
+            <img
+            src="/images/walkingrobot.gif"
+            alt="Walking Robot Animation"
+            className="w-full h-full object-cover"
+            style={{ display: 'block' }}
+            />
+            {/* gradient mask to fade edges */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-black via-transparent to-black opacity-60 mix-blend-overlay"></div>
+        </div>
+    </motion.div>
     </div>
   );
 }
