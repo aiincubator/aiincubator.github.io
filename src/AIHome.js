@@ -116,6 +116,12 @@ export default function AIHome() {
             style={{ transform: 'scale(0.8)' }} // 80%
         >
             <img
+            src="/images/architecture.png"
+            alt="AI Architecture Example"
+            //className="w-full h-full object-cover"
+            //style={{ display: 'block' }}            
+            />
+            <img
             src="/images/walkingrobot.gif"
             alt="Walking Robot Animation"
             className="w-full h-full object-cover"
